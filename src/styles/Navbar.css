@@ -1,0 +1,87 @@
+:root {
+	--BG-COLOR: #2c2a2a;
+	--BG-IMG1: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+	--BG-IMG2: linear-gradient(to right, #314755 0%, #26a0da 100%);
+}
+
+.navbar {
+	padding: 20px 30px;
+	background-color: whitesmoke;
+	max-width: 100vw;
+}
+
+.navbarButton {
+	position: relative;
+}
+
+.groupButton {
+	margin-left: 30px;
+	color: white;
+	background-image: var(--BG-IMG1);
+	background-size: 200% auto;
+	box-shadow: 0.2px 0.2px 5px black;
+	z-index: 10;
+	border: none;
+	border-radius: 5px;
+	width: 110px;
+	height: 35px;
+	padding: 5px 5px;
+	justify-content: space-evenly;
+}
+
+.dropDown{
+	background-color: whitesmoke;
+	position: absolute;
+	left: 25px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+	padding: 5px;
+	margin: 10px 5px 5px 0px;
+	border: 0.2px solid black;
+	border-radius: 7px;
+	box-shadow: 0.2px 0.2px 5px black;
+	z-index: 10;
+}
+
+.active{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+	transition: all .5s ease;
+}
+
+.inactive{
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-10px);
+	transition: .5s ease;
+}
+
+.group {
+	padding: 8px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.group select {
+	color: white;
+	box-shadow: 1px 0px 10px #eee;
+	width: 100px;
+	padding: 5px 10px;
+	border: 1px solid silver;
+	border-radius: 4px;
+	background-image: var(--BG-IMG2);
+}
+
+select option {
+	color: black;
+	margin: 5px;
+}
+
+select option:hover {
+	color: brown;
+}
